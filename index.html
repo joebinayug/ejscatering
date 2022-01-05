@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<title>EJ's Catering And Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!--- jquery library --->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!--- jquery modal --->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+  <!--- responsive rows --->
+  <script src="js/jquery-responsive-rows.js"></script>
+
+  <link rel="stylesheet" href="css/design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--- ANIMATE ON SCROLL LIBRARY --->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!--- IMAGE SLIDER --->
+  <link rel="stylesheet" href="css/responsiveslides.css">
+  <script src="js/responsiveslides.min.js"></script>
+
+  <link rel="stylesheet" href="css/common.css">
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/vanillaJs.js"></script>
+
+  <!--- maps API --->
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJB-C_vHE4MgQS0wPah1FKF_mggDLPwg8&callback=initMap&libraries=&v=weekly&channel=2"
+      async
+  ></script>
+  <script type="text/javascript" src="js/gmaps.js"></script>
+</head>
+<body>
+  <header>
+    <div class="hero-banner">
+      <div class="hero-banner-gradient">
+        <div class="hero-banner-div">
+          <div class="hero-banner-div-img"></div>
+          <div class="hero-banner-div-btn"><a href="#fourth">Reserve Your Event Now!</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav_burger">
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" id="nav_burger_icon" >
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div id="nav_full">
+      <ul>
+        <li class="li-link"><a href="#first" class="hover_class">Goals</a></li>
+        <li class="li-link"><a href="#second" class="hover_class">Services</a></li>
+        <li class="li-link"><a href="#third" class="hover_class">Gallery</a></li>
+        <li class="li-link"><a href="#fourth" class="hover_class">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="first" data-aos="fade-up" data-aos-duration="2000">
+    <div class="about_content">
+      <div class="class-header">
+        <h1>
+          Our Goals
+        </h1>
+      </div>
+
+      <div class="class-detail">
+        <content>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+            like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+        </content>
+        
+      </div>
+
+      <div class="first-wrapper">
+        <div class="first-elements">
+          <div class="first-img-1"></div>
+        </div>
+        <div class="first-elements">
+          <div class="first-img-2"></div>
+        </div>
+        <div class="first-elements">
+          <div class="first-img-3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="second" id="second">
+    <div class="services_content">
+      <div class="class-header">
+        <h1>
+          We Offer the best Services
+        </h1>
+      </div>
+
+      <div class="class-content" data-aos="fade-right" data-aos-duration="2000">
+        <div class="class-container">
+          <div class="class-container-text">
+            <div>
+              <h3>Corporate Event</h3>
+              <div>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </div>
+            </div>
+          </div>
+
+          <div class="class-container-img">
+            <div style=" height: auto; margin: 0 auto; padding: 10px; position: relative;">
+              <div class="class-container-img-cont img-1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="class-content" data-aos="fade-left"  data-aos-duration="2000">
+        <div class="class-container-right">
+          <div class="class-container-img">
+            <div style=" height: auto; margin: 0 auto; padding: 10px; position: relative;">
+              <div  class="class-container-img-cont img-2">
+              </div>
+            </div>
+          </div>
+
+          <div class="class-container-text">
+            <div>
+              <h3>Wedding</h3>
+              <div>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="class-content" data-aos="fade-right" data-aos-duration="2000">
+        <div class="class-container">
+          <div class="class-container-text">
+            <div>
+              <h3>Baptismal</h3>
+              <div>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </div>
+            </div>
+          </div>
+
+          <div class="class-container-img">
+            <div style=" height: auto; margin: 0 auto; padding: 10px; position: relative;">
+              <div class="class-container-img-cont img-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="class-content" data-aos="fade-left" data-aos-duration="2000">
+        <div class="class-container-right">
+          <div class="class-container-img">
+            <div style=" height: auto; margin: 0 auto; padding: 10px; position: relative;">
+              <div class="class-container-img-cont img-4">
+              </div>
+            </div>
+          </div>
+
+          <div class="class-container-text">
+            <div>
+              <h3>Debut</h3>
+              <div>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="class-content" data-aos="fade-right" data-aos-duration="2000">
+        <div class="class-container">
+          <div class="class-container-text">
+            <div>
+              <h3>Kiddi Party</h3>
+              <div>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </div>
+            </div>
+          </div>
+
+          <div class="class-container-img">
+            <div style=" height: auto; margin: 0 auto; padding: 10px; position: relative;">
+              <div class="class-container-img-cont img-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="third" id="third" data-aos="fade-up" data-aos-duration="2000">
+    <div class="class-padding-top">
+      <content>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar pharetra nibh non aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          Ut dignissim dui a tortor auctor, a dictum justo ultrices. Praesent elementum diam nec tincidunt aliquam. Fusce ligula tortor, posuere facilisis lorem non, laoreet scelerisque arcu. Nam eu ex faucibus, 
+          volutpat odio et, egestas est. Maecenas cursus interdum lacus, ac sodales erat. Nunc ultrices et tortor id viverra. Duis blandit nulla et lacinia dignissim. Praesent dapibus lacinia consequat. 
+          Mauris sit amet laoreet libero. Cras quis lacus ut elit faucibus ornare.
+        </p>
+      </content>
+    </div>
+
+    <div class="gallery_content">
+      <div class="callbacks_container">
+        <ul class="rslides" id="slider4">
+          <li>
+            <img src="img/1.jpg" alt="">
+            <!-- <p class="caption">This is a caption</p> -->
+          </li>
+          <li>
+            <img src="img/2.jpg" alt="">
+            <!-- <p class="caption">This is another caption</p> -->
+          </li>
+          <li>
+            <img src="img/3.jpg" alt="">
+            <!-- <p class="caption">The third caption</p> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--- Partners --->
+  <section class="fourth" id="fourth">
+    <div class="class-partners">
+      <div class="class-header">
+        <h3>Our Partners</h3>
+      </div>
+    </div>
+  </section>
+
+  <!--- customer testimonials/feedback --->
+  <section class="fifth" id="fifth">
+    <div class="class-feedback">
+      <div class="class-header">
+        <h3>Customer Testimonials</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="sixth" id="sixth">
+    <div class="reservation_content">
+      <div class="class-header">
+        <h3>Reserve Your Event with us now! </h3>
+      </div>
+      <div class="class-container">
+        <div class="class-container-img class-reserve-left">
+          <!-- <div class="class-header"> -->
+            <h4>
+              Just Fill-up the following and we will get back to you once we validate your chosen date. Reservation will be first come first serve basis, so book your your event now!
+            </h4>
+
+            <h5><i>*Please fill-up all necessary details to make each transactions faster.</i></h5>
+          <!-- </div> -->
+        </div>
+
+        <div class="class-container-text class-reserve-right">
+          <div>
+            <form method="POST" id="id-form-event">
+              <h3>Event Details</h3>
+              <div class="class-container-reserve-div">
+                <label>Name : </label><input type="text" name="txt_name" id="txt_name">
+              </div>
+              <div class="class-container-reserve-div">
+                <label>Contact No: </label><input type="text" name="txt_contact" id="txt_contact">
+              </div>
+              <div class="class-container-reserve-div">
+                <label>E-mail: </label><input type="text" name="txt_email" id="txt_email">
+              </div>
+              <div class="class-container-reserve-div">
+                <label>Event Type : </label>
+                <select name="txt_type" id="txt_type">
+                  <option value=""></option>
+                  <option value="Corporate Event">Corporate Event</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Baptismal">Baptismal</option>
+                  <option value="Debut">Debut</option>
+                  <option value="Kiddie Party">Kiddie Party</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="class-container-reserve-div">
+                <label>Event Date : </label><input type="date" name="txt_date" id="txt_date">
+              </div>
+              <div class="class-container-reserve-btn-div">
+                <div id="id-send-event">
+                  Send
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-elements">
+        <img src="img/phone_png.png" class="class-footer-img" />&nbsp;&nbsp;Contact Numbers<br> 
+        +639957488889 <br>
+        +639096749015 <br>
+        <br>
+        <img src="img/email_png.png" class="class-footer-img" />&nbsp;&nbsp;E-mail address<br>
+        erickajaneenomar@gmail.com <br>
+        joebinayug@gmail.com <br>
+      </div>
+      <div class="footer-elements">
+        <img src="img/fb_png.png" class="class-footer-img" />&nbsp;&nbsp;Facebook<br>
+        <a href='https://www.facebook.com/EJEnomarCateringServices/' target="_blank">EJ's Catering Services</a><br>
+        <i>Please Like & Follow our page!</i><br><br>
+        <a href="javascript:void(0);" id="id-terms">Terms & Condition</a><br><br>
+        Please Feel free to contact us if you have any questions!<br><br>
+        Need a website for your business? Give us a call!<br><br>
+      </div>
+      <div class="footer-elements">
+        <img src="img/address_png.png" class="class-footer-img" />&nbsp;&nbsp;Address<br>
+        Phase 8, United, Dinar, Novaliches, Quezon City, 1121 Metro Manila <br><br>
+        <div class="class-map" id="id-map"></div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="dialogFail" title="Ej's Catering Services">
+    <p>Please provide a Name, Valid Contact number or Email address, Event type and Date.</p>
+  </div>
+
+  <div id="dialogSuccess" title="Ej's Catering Services">
+    <p>Thank you for submitting your request, we will contact you as soon as possible.</p>
+  </div>
+
+  <div id="dialogTerms" title="Ej's Catering Services">
+    <p>
+      <div class="class-header">
+        <h4>Terms And Conditions</h4>
+      </div>
+      <div>
+        <ol>
+          <li>
+            Service Quality
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris sem, pharetra id dolor et, interdum malesuada metus. Donec ac nisi blandit felis tristique faucibus bibendum a libero. 
+              In eleifend, erat lobortis ullamcorper accumsan, orci est sodales dolor, vitae congue lectus odio imperdiet est. Integer mollis rhoncus libero vitae laoreet. Suspendisse eget pulvinar purus, 
+              non placerat ligula. Donec molestie consequat ex, scelerisque sodales leo. Vivamus finibus ex vel nunc efficitur tincidunt. Nam lorem nisl, ultricies sed felis et, accumsan finibus neque. 
+              Duis fringilla tortor lorem. Aenean porttitor convallis lacus, ac tincidunt nisl luctus id. In volutpat interdum porttitor. Proin vehicula tincidunt euismod. Sed id libero consequat, 
+              finibus ligula quis, molestie enim.
+            </p>
+          </li>
+          <li>
+            Liabilities
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris sem, pharetra id dolor et, interdum malesuada metus. Donec ac nisi blandit felis tristique faucibus bibendum a libero. 
+              In eleifend, erat lobortis ullamcorper accumsan, orci est sodales dolor, vitae congue lectus odio imperdiet est. Integer mollis rhoncus libero vitae laoreet. Suspendisse eget pulvinar purus, 
+              non placerat ligula. Donec molestie consequat ex, scelerisque sodales leo. Vivamus finibus ex vel nunc efficitur tincidunt. Nam lorem nisl, ultricies sed felis et, accumsan finibus neque. 
+              Duis fringilla tortor lorem. Aenean porttitor convallis lacus, ac tincidunt nisl luctus id. In volutpat interdum porttitor. Proin vehicula tincidunt euismod. Sed id libero consequat, 
+              finibus ligula quis, molestie enim.
+            </p>
+          </li>
+          <li>
+            Payments
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris sem, pharetra id dolor et, interdum malesuada metus. Donec ac nisi blandit felis tristique faucibus bibendum a libero. 
+              In eleifend, erat lobortis ullamcorper accumsan, orci est sodales dolor, vitae congue lectus odio imperdiet est. Integer mollis rhoncus libero vitae laoreet. Suspendisse eget pulvinar purus, 
+              non placerat ligula. Donec molestie consequat ex, scelerisque sodales leo. Vivamus finibus ex vel nunc efficitur tincidunt. Nam lorem nisl, ultricies sed felis et, accumsan finibus neque. 
+              Duis fringilla tortor lorem. Aenean porttitor convallis lacus, ac tincidunt nisl luctus id. In volutpat interdum porttitor. Proin vehicula tincidunt euismod. Sed id libero consequat, 
+              finibus ligula quis, molestie enim.
+          </li>
+          <li>
+            Cancellation
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris sem, pharetra id dolor et, interdum malesuada metus. Donec ac nisi blandit felis tristique faucibus bibendum a libero. 
+              In eleifend, erat lobortis ullamcorper accumsan, orci est sodales dolor, vitae congue lectus odio imperdiet est. Integer mollis rhoncus libero vitae laoreet. Suspendisse eget pulvinar purus, 
+              non placerat ligula. Donec molestie consequat ex, scelerisque sodales leo. Vivamus finibus ex vel nunc efficitur tincidunt. Nam lorem nisl, ultricies sed felis et, accumsan finibus neque. 
+              Duis fringilla tortor lorem. Aenean porttitor convallis lacus, ac tincidunt nisl luctus id. In volutpat interdum porttitor. Proin vehicula tincidunt euismod. Sed id libero consequat, 
+              finibus ligula quis, molestie enim.
+          </li>
+        </ol>
+      </div>
+    </p>
+  </div>
+
+</body>
+</html>
