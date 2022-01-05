@@ -1,3 +1,4 @@
+<!--- must not be uploaded --->
 <?php
   $servername = "localhost";
   $username = "ejs_event_admin";
